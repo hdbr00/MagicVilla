@@ -12,7 +12,12 @@ namespace MagicVilla_API
             CreateMap<VillaDto, Villa>();//fuente, destino
 
             CreateMap<Villa, VillaCreateDto>().ReverseMap();
-            CreateMap<Villa, VillaUpdateDto>().ReverseMap(); 
+            CreateMap<Villa, VillaUpdateDto>().ReverseMap();
+
+
+            CreateMap<NumeroVilla, NumeroVillaDto>().ReverseMap();
+            CreateMap<NumeroVilla, NumeroVillaCreateDto>().ReverseMap(); 
+            CreateMap<NumeroVilla, NumeroVillaUpdateDto>().ReverseMap(); 
 
 
             //agregar el servicios en nuestro program.cs.
